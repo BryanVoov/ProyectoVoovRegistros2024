@@ -1,0 +1,93 @@
+.info-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: white;
+}
+
+.container-fluid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+  width: 100%; /* Make sure it takes the full width of its container */
+  text-align: center; /* Center the content within the container */
+}
+.logo-container img {
+  border-radius: 0%; /* Remove the circular border */
+  width: 100%; /* Set a fixed width for the logo */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+.row {
+  height: 100%;
+  display: flex;
+}
+.info-section {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: white;
+}
+
+.info-section > div {
+  flex: 1;
+  margin: 0 10px; /* Adjust the spacing between columns */
+}
+
+.info-section > div:not(:first-child) {
+  border-left: 1.5px solid #000; /* Add left border to all columns except the first */
+}
+
+.info-section .info-header {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.info-section .info-content p {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.table-container {
+  overflow-y: auto;
+  max-height: 400px; /* Set the maximum height for the table container */
+  position: relative;
+}
+
+#evaluationTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#evaluationTable th,
+#evaluationTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+#evaluationTable thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.sort-icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
